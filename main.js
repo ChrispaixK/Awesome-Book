@@ -1,0 +1,1 @@
+return ('Awesome book');
