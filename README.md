@@ -42,15 +42,17 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Chrispaix KAZE**
 
-👤 **Author2**
+- GitHub: [@ChrispaixK](https://github.com/ChrispaixK)
+- Twitter: [@ChrispaixK](https://twitter.com/ChrispaixK)
+- LinkedIn: [Chrispaix KAZE](https://www.linkedin.com/in/chrispaix-kaze-70445a175/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Author1**
+
+- GitHub: (https://github.com/rotshidzw)
+- Twitter: (https://twitter.com/footballlz )
+- LinkedIn: (https://www.linkedin.com/in/rochidzwa-chester-8062b6211/)
 
 ## 🤝 Contributing
 
