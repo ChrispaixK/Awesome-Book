@@ -1,46 +1,31 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Book
 
-> Description the project.
+> In this project, we will build a basic website that allows users to add/remove books from a list.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Javascript
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### create a local folder
 
-### Setup
+### open your code editor
 
-### Install
+### open your folder in your editor
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+### clone this project from Github
 
 ## Authors
-
-👤 **Author1**
 
 👤 **Chrispaix KAZE**
 
@@ -48,11 +33,12 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@ChrispaixK](https://twitter.com/ChrispaixK)
 - LinkedIn: [Chrispaix KAZE](https://www.linkedin.com/in/chrispaix-kaze-70445a175/)
 
-👤 **Author1**
+👤 **Chester**
 
 - GitHub: (https://github.com/rotshidzw)
 - Twitter: (https://twitter.com/footballlz )
 - LinkedIn: (https://www.linkedin.com/in/rochidzwa-chester-8062b6211/)
+
 
 ## 🤝 Contributing
 
@@ -66,9 +52,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- MicroverseInc
 
 ## 📝 License
 
