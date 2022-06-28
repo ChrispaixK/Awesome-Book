@@ -8,17 +8,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Awesome books</h1>
+  <h1>All Awesome books</h1>
 
-  <div class="classBook">
+  <div class="books-container">
+    <div class="books" id="books"></div>
 
   </div>
-
-  <form action="#" id="bookForm">
-    <input type="text" placeholder="Book title" id="bookTitle"><br><br>
-    <input type="text" placeholder="Book Author" id="bookAuthor"><br><br>
-    <button class="submit" type="submit">Add</button>
+  <span></span>
+  <h2>Add Another Book</h2>
+  <form action="#" class="form" id="bookForm">
+    <input class="input" type="text" placeholder="Book title" id="title"><br><br>
+    <input class="input" type="text" placeholder="Book Author" id="author"><br><br>
+    <input class="sb-btn" type="submit" name="submit-button" id="submit-button" value="Add book" onclick="myBooks.newBook()" />
   </form>
+
   <script src="main.js"></script>
 </body>
 </html>
