@@ -34,8 +34,13 @@ span {
   margin: 20px auto 50px auto;
 }
 
+.form {
+  width: 60%;
+  margin: 0 auto 0 auto;
+}
+
 .input {
-  width: 80%;
+  width: 99%;
   height: 2.5em;
 }
 
@@ -46,4 +51,9 @@ span {
   padding: 5px 10px;
   border: none;
   box-shadow: 0 0 3px 0 #00000056;
+  float: right;
+}
+
+.alert {
+  color: #e00f00;
 }

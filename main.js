@@ -69,7 +69,7 @@ class ListOfBooks {
       });
     } if (this.books.length === 0) {
       books.innerHTML += `
-     <p>The Library is empty</p>
+     <p class="alert">The Library is empty</p>
      `;
     }
   }
