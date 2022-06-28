@@ -13,6 +13,8 @@ class ListOfBooks {
     } else {
       this.books.push({ title: title.value, author: author.value });
       this.updateLocalStorage();
+      title.value = '';
+      author.value = '';
     }
   }
 
@@ -63,6 +65,6 @@ class ListOfBooks {
 
 const myBooks = new ListOfBooks();
 
-//load already existing books in the local storage
+// load already existing books in the local storage
 
 myBooks.bookOnLoad();
