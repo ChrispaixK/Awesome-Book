@@ -21,6 +21,7 @@ class ListOfBooks {
   removeBook(id) {
     this.books.splice(id, 1);
     this.updateLocalStorage();
+    this.bookOnLoad()
   }
 
   showBooks() {
@@ -30,11 +31,14 @@ class ListOfBooks {
 
     this.books.forEach((book) => {
       books.innerHTML += `
-      <li>
-        <p>${book.title}</p>
-        <p>${book.author}</p>
-        <button onClick="myBooks.removeBook(${id})">Remove</button>
-      </li>`;
+      <div class="book-item">
+      <div class="title"> 
+         <p>"${book.title}" by ${book.author}</p>
+        </div>
+       <div class="btn">
+         <button onClick="myBooks.removeBook(${id})">Remove</button>
+       </div>
+       </div>`;
       id += 1;
     });
   }
@@ -49,16 +53,24 @@ class ListOfBooks {
     const books = document.getElementById('books');
     books.innerHTML = '';
     let id = 0;
-    if (localStorage.length > 0) {
+    if (this.books.length > 0) {
       this.books.forEach((book) => {
         books.innerHTML += `
-        <li>
-          <p>${book.title}</p>
-          <p>${book.author}</p>
-          <button onClick="myBooks.removeBook(${id})">Remove</button>
-        </li>`;
+        <div class="book-item">
+        <div class="title"> 
+         <p>"${book.title}" by ${book.author}</p>
+        </div>
+       <div class="btn">
+         <button onClick="myBooks.removeBook(${id})">Remove</button>
+       </div>
+       </div>
+       `;
         id += 1;
       });
+    }if(this.books.length === 0) {
+      books.innerHTML += `
+     <p>The Library is empty</p>
+     `
     }
   }
 }
