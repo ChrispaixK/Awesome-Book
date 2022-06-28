@@ -62,34 +62,48 @@
 
 /********************IMPLEMENT USING CLASS START HERE ***************/
 
-const addBook = document.querySelector('.classBook');
-const title = document.querySelector('#bookTitle');
-const author = document.querySelector('#bookAuthor');
-const btn = document.querySelector('.submit');
 
-
-//class used to create array 
-
-class Array {
+class ListOfBooks {
   constructor() {
-    this.content=[];
+    this.books = (localStorage.myBooks != null) ? JSON.parse(localStorage.myBooks) : [];
   }
-}
 
-//create books array using class Array 
-
-let books =new Array;
-books.content.push("Chrispaix")
-console.log(books.content);
-
-
-class Book {
-  constructor(title,author){
-    this.title=title,
-    this.author=author,
-    this.display = function (){
-      console.log(`${this.title} by ${this.author}`);
+  newBook() {
+    const title = document.getElementById('title');
+    const author = document.getElementById('author');
+    if (title.value === '' || author.value === '') {
+      alert('Please fill in all fields');
+    } else {
+      this.books.push({ title: title.value, author: author.value });
+      this.updateLocalStorage();
     }
- 
+  }
+
+  removeBook(id) {
+    this.books.splice(id, 1);
+    this.updateLocalStorage();
+  }
+
+  showBooks() {
+    const books = document.getElementById('books');
+    books.innerHTML = '';
+    let id = 0;
+
+    this.books.forEach((book) => {
+      books.innerHTML += `
+      <li>
+        <p>${book.title}</p>
+        <p>${book.author}</p>
+        <button onClick="myBooks.removeBook(${id})">Remove</button>
+      </li>`;
+      id += 1;
+    });
+  }
+
+  updateLocalStorage() {
+    localStorage.myBooks = JSON.stringify(this.books);
+    this.showBooks();
   }
 }
+
+const myBooks = new ListOfBooks();
