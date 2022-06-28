@@ -21,7 +21,7 @@ class ListOfBooks {
   removeBook(id) {
     this.books.splice(id, 1);
     this.updateLocalStorage();
-    this.bookOnLoad()
+    this.bookOnLoad();
   }
 
   showBooks() {
@@ -67,10 +67,10 @@ class ListOfBooks {
        `;
         id += 1;
       });
-    }if(this.books.length === 0) {
+    } if (this.books.length === 0) {
       books.innerHTML += `
      <p>The Library is empty</p>
-     `
+     `;
     }
   }
 }
