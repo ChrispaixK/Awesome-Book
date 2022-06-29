@@ -8,19 +8,19 @@ const { DateTime } = luxon;
 
 link[0].addEventListener('click', () => {
   link[0].classList.add('active');
-  link[0].classList.remove('desactive');
+  link[0].classList.remove('inactive');
   sections[0].classList.remove('d-none');
-  link[1].classList.add('desactive');
-  link[2].classList.add('desactive');
+  link[1].classList.add('inactive');
+  link[2].classList.add('inactive');
   sections[1].classList.add('d-none');
   sections[2].classList.add('d-none');
 });
 
 link[1].addEventListener('click', () => {
   link[1].classList.add('active');
-  link[1].classList.remove('desactive');
-  link[0].classList.add('desactive');
-  link[2].classList.add('desactive');
+  link[1].classList.remove('inactive');
+  link[0].classList.add('inactive');
+  link[2].classList.add('inactive');
   sections[1].classList.remove('d-none');
   sections[0].classList.add('d-none');
   sections[2].classList.add('d-none');
@@ -28,9 +28,9 @@ link[1].addEventListener('click', () => {
 
 link[2].addEventListener('click', () => {
   link[2].classList.add('active');
-  link[2].classList.remove('desactive');
-  link[0].classList.add('desactive');
-  link[1].classList.add('desactive');
+  link[2].classList.remove('inactive');
+  link[0].classList.add('inactive');
+  link[1].classList.add('inactive');
   sections[2].classList.remove('d-none');
   sections[0].classList.add('d-none');
   sections[1].classList.add('d-none');

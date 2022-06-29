@@ -59,11 +59,11 @@ ul {
   color: rgb(255, 102, 0);
 }
 
-.desactive {
+.inactive {
   color: #2e2e2e;
 }
 
-.nav-item:nth-child(2),
-.nav-item:nth-child(3) {
+.items:nth-child(2),
+.items:nth-child(3) {
   border-left: 1.5px solid rgb(187, 112, 112);
 }
