@@ -80,3 +80,7 @@ const myBooks = new ListOfBooks();
 // load already existing books in the local storage
 
 myBooks.bookOnLoad();
+
+const listTitle = document.querySelector('.list-title');
+
+if (myBooks.books.length !== 0) { listTitle.innerHTML = ''; }

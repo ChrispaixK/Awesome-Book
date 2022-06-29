@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Awesome Book</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aweasome Books</title>
+    <!-- Luxon -->
+    <script type="text/javascript" src="https://moment.github.io/luxon/global/luxon.min.js "></script>
 </head>
-<body>
-  <h1>All Awesome books</h1>
 
-  <div class="books-container">
-    <div class="books" id="books"></div>
+<body class="m-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid p-2">
+            <a class="navbar-brand" href="#">Aweasome Books</a>
+            <div>
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link desactive" aria-current="page" href="#">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link desactive" href="#">Add new</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link desactive" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="date">
+        <p id="render-date" class="fs-6 date position-absolute"></p>
+    </div>
 
-  </div>
-  <span></span>
-  <h2>Add Another Book</h2>
-  <form action="#" class="form" id="bookForm">
-    <input class="input" type="text" placeholder="Book title" id="title"><br><br>
-    <input class="input" type="text" placeholder="Book Author" id="author"><br><br>
-    <input class="sb-btn" type="submit" name="submit-button" id="submit-button" value="Add book" onclick="myBooks.newBook()" />
-  </form>
+    <section id="books-list" class="book-list col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center p-4">
+        <h1 class="display-4 py-2 text-dark ">All Awesome books</h1>
+        <div class="books-container container d-flex flex-column mb-5 mx-auto">
+            <h2 id="empty-tag" class="list-title text-center w-100 mx-auto">Books List is empty</h2>
+            <table class="table table-striped my-2">
+                <tbody id="books"></tbody>
+            </table>
+        </div>
+    </section>
 
-  <script src="main.js"></script>
+    <section id="add-book-container" class="d-none">
+        <div class="row text-dark">
+            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                <h2 class="display-4 py-2 text-dark">Add a new book</h2>
+                <div class="px-2">
+                    <form action="#" id="form" class="justify-content-center">
+                        <input type="text" name="title" id="title" placeholder="Title" class="col-md-10" />
+                        <br>
+                        <input type="text" name="author" id="author" placeholder="Author" class="col-md-10" />
+                        <br>
+                        <input type="submit" name="submit-button" id="submit-button" value="Add book"
+                            class="btn btn-light" onclick="myBooks.newBook()" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <script src="./javascript/links.js"></script>
+    <script src="./javascript/main.js"></script>
 </body>
+
 </html>

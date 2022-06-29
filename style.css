@@ -1,59 +1,69 @@
 body {
-  background-color: #fff;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.books {
-  padding: 20px 50px;
-  margin: 10px;
-  box-shadow: 0 0 3px 0 #00000056;
+form > input {
+  margin-bottom: 10px;
 }
 
-.book-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #808080;
+li {
+  list-style: none;
 }
 
-.btn button {
-  background-color: #e00f00;
-  color: #fff;
-  font-size: 15px;
-  padding: 5px 10px;
-  border: none;
-  box-shadow: 0 0 3px 0 #00000056;
+tr {
+  border: 1px solid black;
+  margin-bottom: 2rem;
 }
 
-span {
-  display: block;
-  height: 2px;
-  width: 50px;
-  background-color: #0084ff;
-  margin: 20px auto 50px auto;
+.section-title {
+  position: relative;
 }
 
-.form {
-  width: 60%;
-  margin: 0 auto 0 auto;
+.navbar {
+  box-shadow: 0 10px 13px -7px rgb(165, 89, 89), 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-.input {
-  width: 99%;
-  height: 2.5em;
+
+
+
+
+.date {
+  top: 90px;
+  right: 10px;
+  z-index: 4;
+  font-weight: bold;
 }
 
-.sb-btn {
-  background-color: #008000;
-  color: #fff;
-  font-size: 15px;
-  padding: 5px 10px;
-  border: none;
-  box-shadow: 0 0 3px 0 #00000056;
-  float: right;
+.books-container {
+  border:solid;
+  width: 50vw;
+  opacity: 0.8;
+  background-color:rgb(176, 183, 183)
 }
 
-.alert {
-  color: #e00f00;
+.btn {
+  border: solid;
+}
+
+.btn:hover {
+  border: 2px solid #b64242;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.active {
+  color: rgb(255, 102, 0);
+}
+
+.desactive {
+  color: #2e2e2e;
+}
+
+.nav-item:nth-child(2),
+.nav-item:nth-child(3) {
+  border-left: 1.5px solid rgb(187, 112, 112);
 }
