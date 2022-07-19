@@ -4,3 +4,4 @@ package-lock.json
 package.json
 .stylelintrc.json
 .eslintrc.json
+.vscode
